@@ -1,5 +1,5 @@
 {
-  "name": "@bigmi/client",
+  "name": "@bitunity/client",
   "version": "0.1.1",
   "description": "Reactive primitives for Bitcoin apps.",
   "type": "module",
@@ -42,7 +42,7 @@
     "hooks"
   ],
   "dependencies": {
-    "@bigmi/core": "workspace:^",
+    "@bitunity/core": "workspace:^",
     "@wagmi/core": "^2.16.4",
     "viem": "^2.23.2"
   },

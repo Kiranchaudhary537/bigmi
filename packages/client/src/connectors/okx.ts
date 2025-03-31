@@ -1,4 +1,4 @@
-import type { SignPsbtParameters, UTXOWalletProvider } from '@bigmi/core'
+import type { SignPsbtParameters, UTXOWalletProvider } from '@bitunity/core'
 import {
   type Address,
   MethodNotSupportedRpcError,

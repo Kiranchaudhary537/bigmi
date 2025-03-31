@@ -28,7 +28,7 @@ export async function formatPackageFile() {
         types: './dist/esm/index.d.ts',
         default: './dist/esm/index.js',
       },
-      ...(packageDataOther.name === '@bigmi/core'
+      ...(packageDataOther.name === '@bitunity/core'
         ? {
             '.': {
               types: './dist/esm/index.d.ts',
@@ -46,7 +46,7 @@ export async function formatPackageFile() {
     },
   }
 
-  if (newPackageData.name === '@bigmi/core') {
+  if (newPackageData.name === '@bitunity/core') {
     // biome-ignore lint/performance/noDelete:
     delete newPackageData.module
   }

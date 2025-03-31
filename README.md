@@ -4,8 +4,8 @@
 <p align="center"><strong>TypeScript library and reactive primitives for Bitcoin apps.</strong></p>
 
 [![license](https://img.shields.io/github/license/lifinance/bigmi)](/LICENSE.md)
-[![npm latest package](https://img.shields.io/npm/v/@bigmi/core/latest.svg)](https://www.npmjs.com/package/@bigmi/core)
-[![npm downloads](https://img.shields.io/npm/dm/@bigmi/core.svg)](https://www.npmjs.com/package/@bigmi/core)
+[![npm latest package](https://img.shields.io/npm/v/@bitunity/core/latest.svg)](https://www.npmjs.com/package/@bitunity/core)
+[![npm downloads](https://img.shields.io/npm/dm/@bitunity/core.svg)](https://www.npmjs.com/package/@bitunity/core)
 
 </div>
 
@@ -22,20 +22,20 @@ Whether you're building a Node.js application or a client-side app, Bigmi provid
 
 Bigmi is modularized into several packages, each suited to different use cases:
 
-- [@bigmi/core](https://www.npmjs.com/package/@bigmi/core) - Actions, transports, utilities, and other core primitives for Node.js or client-side applications.
-- [@bigmi/react](https://www.npmjs.com/package/@bigmi/react) - Hooks, providers, and other useful primitives for React applications.
-- [@bigmi/client](https://www.npmjs.com/package/@bigmi/client) - Wallet connectors and other tools to connect wallet extensions with Bitcoin applications.
+- [@bitunity/core](https://www.npmjs.com/package/@bitunity/core) - Actions, transports, utilities, and other core primitives for Node.js or client-side applications.
+- [@bitunity/react](https://www.npmjs.com/package/@bitunity/react) - Hooks, providers, and other useful primitives for React applications.
+- [@bitunity/client](https://www.npmjs.com/package/@bitunity/client) - Wallet connectors and other tools to connect wallet extensions with Bitcoin applications.
 
 ## Installation
 
 ```sh
-pnpm add @bigmi/react
+pnpm add @bitunity/react
 ```
 ```sh
-pnpm add @bigmi/core
+pnpm add @bitunity/core
 ```
 ```sh
-pnpm add @bigmi/client
+pnpm add @bitunity/client
 ```
 
 ## Getting Started
@@ -43,7 +43,7 @@ pnpm add @bigmi/client
 Here is an example of a basic usage:
 
 ```tsx
-import { useConfig } from '@bigmi/react'
+import { useConfig } from '@bitunity/react'
 import {
   type UTXOAPISchema,
   bitcoin,
@@ -52,7 +52,7 @@ import {
   sendUTXOTransaction,
   utxo,
   waitForTransaction,
-} from '@bigmi/core'
+} from '@bitunity/core'
 import { createClient, fallback, rpcSchema } from 'viem'
 import { useAccount } from 'wagmi'
 

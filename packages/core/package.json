@@ -1,5 +1,5 @@
 {
-  "name": "@bigmi/core",
+  "name": "@bitunity/core",
   "version": "0.1.1",
   "description": "TypeScript library for Bitcoin apps.",
   "type": "module",

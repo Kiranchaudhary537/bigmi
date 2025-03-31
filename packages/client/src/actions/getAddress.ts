@@ -1,4 +1,4 @@
-import { isUTXOAddress } from '@bigmi/core'
+import { isUTXOAddress } from '@bitunity/core'
 import type { Address } from 'viem'
 import { InvalidAddressError } from 'viem'
 

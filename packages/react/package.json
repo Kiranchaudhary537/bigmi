@@ -1,5 +1,5 @@
 {
-  "name": "@bigmi/react",
+  "name": "@bitunity/react",
   "version": "0.1.1",
   "description": "React primitives for Bitcoin apps.",
   "type": "module",
@@ -42,8 +42,8 @@
     "hooks"
   ],
   "dependencies": {
-    "@bigmi/client": "workspace:^",
-    "@bigmi/core": "workspace:^",
+    "@bitunity/client": "workspace:^",
+    "@bitunity/core": "workspace:^",
     "use-sync-external-store": "^1.4.0",
     "viem": "^2.23.2"
   },

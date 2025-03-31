@@ -2,7 +2,7 @@ import type {
   BtcAccount,
   SignPsbtParameters,
   UTXOWalletProvider,
-} from '@bigmi/core'
+} from '@bitunity/core'
 import {
   type Address,
   MethodNotSupportedRpcError,
