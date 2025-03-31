@@ -1,24 +1,11 @@
 {
   "name": "@bitunity/react",
-  "version": "0.1.1",
+  "version": "0.0.1",
   "description": "React primitives for Bitcoin apps.",
   "type": "module",
-  "main": "./src/index.ts",
-  "types": "./src/index.d.ts",
+  "main": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "sideEffects": false,
-  "scripts": {
-    "watch": "tsc -w -p ./tsconfig.json",
-    "build": "pnpm clean && pnpm build:esm && pnpm build:clean",
-    "build:esm": "tsc --build",
-    "build:prerelease": "node ../../scripts/prerelease.js && cpy '../../*.md' .",
-    "build:postrelease": "node ../../scripts/postrelease.js && rm -rf *.md",
-    "build:clean": "rm -rf tsconfig.tsbuildinfo ./dist/tsconfig.tsbuildinfo",
-    "release:build": "pnpm build",
-    "clean": "pnpm build:clean && rm -rf dist",
-    "check:types": "tsc --noEmit",
-    "check:circular-deps": "madge --circular $(find ./src -name '*.ts' -o -name '*.tsx')",
-    "check:circular-deps-graph": "madge --circular $(find ./src -name '*.ts' -o -name '*.tsx') --image graph.svg"
-  },
   "author": "Eugene Chybisov <eugene@li.finance>",
   "homepage": "https://github.com/lifinance/bigmi",
   "repository": {
@@ -47,16 +34,16 @@
     "use-sync-external-store": "^1.4.0",
     "viem": "^2.23.2"
   },
-  "devDependencies": {
-    "@types/use-sync-external-store": "^0.0.6",
-    "cpy-cli": "^5.0.0",
-    "madge": "^8.0.0",
-    "typescript": "^5.7.3"
-  },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18",
     "wagmi": "^2.14.0"
   },
-  "files": ["dist/**", "src/**", "!tsconfig.json"]
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "default": "./dist/esm/index.js"
+    },
+    "./package.json": "./package.json"
+  }
 }
